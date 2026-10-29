@@ -1,0 +1,44 @@
+{
+  "name": "NBA 2K14",
+  "id": "CUSA00104",
+  "version": "01.05",
+  "process": "eboot.bin",
+  "plugins": [
+    {
+      "name": "Infinite Skill Points (SP)",
+      "desc": "Freeze or maximize your SP in MyCareer",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "0x01A0B2C0",
+          "on": "0x909090909090",
+          "off": "0x898394000000"
+        }
+      ]
+    },
+    {
+      "name": "Infinite Upgrade Points",
+      "desc": "Allows unlimited player upgrades",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "0x01B1C3D4",
+          "on": "0x41890424",
+          "off": "0x44890424"
+        }
+      ]
+    },
+    {
+      "name": "Max VC (Visual Concepts Points)",
+      "desc": "Gives maximum VC currency offline",
+      "type": "checkbox",
+      "memory": [
+        {
+          "offset": "0x01C2D4E8",
+          "on": "0xB83F420F0090",
+          "off": "0x8B83A8000000"
+        }
+      ]
+    }
+  ]
+}
